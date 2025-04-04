@@ -1,0 +1,853 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Astro</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!--Google Font link-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/fonticons.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--<link rel="stylesheet" href="assets/css/colors/maron.css">-->
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+
+    <!-- Preloader -->
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_four"></div>
+            </div>
+        </div>
+    </div>
+    <!--End off Preloader -->
+
+
+    <div class="culmn">
+        <!--Home page style-->
+
+        <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+            <!-- Start Top Search -->
+            <div class="top-search">
+                <div class="container">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <!-- <h1 data-in="fadeInDown" data-out="fadeOutUp">ASTRO</h1> -->
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="#hello">ASTRO CENTRE</a></li>
+                    </ul>
+                    <a class="navbar-brand" href="#brand">
+
+                        <!-- <img src="assets/images/logo.png" class="logo logo-display m-top-10" alt=""> -->
+                        <!-- <img src="assets/images/logo.jpg" class="logo logo-scrolled" alt=""> -->       
+
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="#hello">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <!-- <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#pricing">Pricing</a></li> -->
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+                <div class="widget">
+                    <h6 class="title">Custom Pages</h6>
+                    <ul class="link">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h6 class="title">Additional Links</h6>
+                    <ul class="link">
+                        <li><a href="#">Retina Homepage</a></li>
+                        <li><a href="#">New Page Examples</a></li>
+                        <li><a href="#">Parallax Sections</a></li>
+                        <li><a href="#">Shortcode Central</a></li>
+                        <li><a href="#">Ultimate Font Collection</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Side Menu -->
+
+        </nav>
+
+
+        <!--Home Sections-->
+
+        <section id="hello" class="home bg-mega">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="main_home">
+                        <div class="home_text">
+                            <h1 class="text-white">TAKE CONTROL OF YOUR LIFE <br>AND NAVIGATE WITH ASTROLOGY</h1>
+                        </div>
+
+                        <div class="home_btns m-top-40">
+                            <a href="#about" class="btn btn-primary m-top-20">GET STARTED</a>
+                            <a href="#" target="_blank" class="btn btn-default m-top-20">CONNECT NOW</a>
+                        </div>
+
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+        </section> <!--End off Home Sections-->
+
+
+        <!--About Sections-->
+        <section id="about" class="about roomy-100">
+            <div class="container">
+                <div class="row">
+                    <div class="main_about">
+                        <div class="col-md-6">
+                            <div class="about_content">
+                                <h2>ABOUT US</h2>
+                                <div class="separator_left"></div>
+
+                                <p>We bring clarity to life’s uncertainties. Our expert astrologers specialize in
+                                    personalized consultations for marriage, career, education, and financial growth,
+                                    empowering you to make informed choices. With a commitment to authenticity and
+                                    wisdom, we offer reliable guidance grounded in traditional astrology and customized
+                                    for your unique path.</p>
+                                <p>We blend ancient indian vedic / western techniques with modern psychology to provide
+                                    Practical, ethical guidance. Our mission is to help you align with your true path –
+                                    Without fear and fake pridictions</p>
+                                <p>Discover your cosmic blueprint – astrology insights for clarity and growth</p>
+
+                                <div class="about_btns m-top-40">
+                                    <a href="#contact" class="btn btn-primary">CONNECT NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about_accordion wow fadeIn">
+                                <div id="faq_main_content" class="faq_main_content">
+                                    <h6 class="open"><i class="fa fa-angle-right"></i> UNIQUE SERVICE </h6>
+                                    <div class="open">
+                                        <div class="content">
+                                            <p>Understand your strengths, challenges and life path through personalized
+                                                reports based on your birth chart as per ancient Indian Vedic Astrology
+                                                Knowledge</p>
+                                        </div>
+                                    </div> <!-- End off accordion item-1 -->
+
+                                    <h6><i class="fa fa-angle-right"></i>VEDIC ASTROLOGY</h6>
+                                    <div>
+                                        <div class="content">
+                                            <p>Indian Astrology, also known as Vedic Astrology or Jyotish Shastra, is an
+                                                ancient and divine science that reveals the connection between human
+                                                life and cosmic influences. Rooted in the sacred Vedas, it is based on
+                                                the precise movements of planets, stars, and the Moon, offering deep
+                                                insights into destiny, karma, and future possibilities. </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-2 -->
+
+                                    <h6> <i class="fa fa-angle-right"></i> SCIENCE OF ASTROLOGY </h6>
+                                    <div>
+                                        <div class="content">
+                                            <p>Unlike Western astrology, which focuses on the Sun sign, Indian astrology
+                                                uses the Moon sign (Rashi) and Nakshatras (constellations) to provide
+                                                highly accurate and personalized predictions. A person’s Janam Kundli
+                                                (birth chart) is created using the date, time, and place of birth,
+                                                mapping planetary positions that shape life events.</p>
+                                        </div>
+                                    </div> <!-- End off accordion item-3 -->
+
+                                    <h6><i class="fa fa-angle-right"></i>KEY ASPECTS OF INDIAN ASTROLOGY </h6>
+                                    <div>
+                                        <div class="content">
+                                            <p>
+                                            <ul>
+                                                <li> 12 Zodiac Signs (Rashis): Represent personality and life patterns.
+                                                </li>
+                                                <li> 9 Planets (Navagrahas): Influence different aspects of life.</li>
+                                                <li> 12 Houses (Bhavas): Indicate specific life areas like career,
+                                                    relationships, and health.</li>
+                                                <li> Dasha System: Planetary periods affecting life cycles.</li>
+                                                <li>Yogas & Doshas: Special planetary combinations that bring fortune or
+                                                    challenges. </li>
+                                            </ul>
+                                            </p>
+                                        </div>
+                                    </div> <!-- End off accordion item-4 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+            <br />
+            <br />
+            <br />
+            <br />
+            <hr />
+            <br />
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="about_bottom_content">
+                        <div class="col-md-4">
+                            <div class="about_bottom_item m-top-20">
+                                <div class="ab_head">
+                                    <div class="ab_head_icon">
+                                        <i class="icofont icofont-calendar"></i>
+                                    </div>
+                                    <h6 class="m-top-20"> Personalized Yearly & Monthly Predictions</h6>
+                                </div>
+                                <p class="m-top-20">
+                                <ul>
+                                    Plan ahead with customized astrological forecasts:
+                                    <li>✔ Major life events & planetary influences</li>
+                                    <li>✔ Good & challenging periods</li>
+                                    <li>✔ Best times for important decisions</li>
+                                    <li>✔ Personalized remedies for success</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_bottom_item m-top-20">
+                                <div class="ab_head">
+                                    <div class="ab_head_icon">
+                                        <i class="icofont icofont-space"></i>
+                                    </div>
+                                    <h6 class="m-top-20">Muhurat & Astrology Consultations</h6>
+                                </div>
+                                <p class="m-top-20">
+                                <ul>
+                                    Find the most auspicious time (Shubh Muhurat) for:
+                                    <li> ✔ Marriage & Engagement</li>
+                                    <li> ✔ Business Startups & Property Purchase</li>
+                                    <li> ✔ Childbirth & Name Ceremony</li>
+                                    <li> ✔ Travel, Education & Investments </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="about_bottom_item m-top-20">
+                                <div class="ab_head">
+                                    <div class="ab_head_icon">
+                                        <i class="icofont icofont-file"></i>
+                                    </div>
+                                    <h6 class="m-top-20">BIRTH CHART & ANALYSIS</h6>
+                                </div>
+                                <p class="m-top-20">
+                                    A Birth Chart (Janam Kundli) is a cosmic map of the planetary positions at the exact
+                                    time of your birth. It serves as a blueprint of your life, revealing insights into
+                                    your personality, strengths, challenges, and future possibilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+        </section> <!--End off About section -->
+
+
+        <!--Video section-->
+
+
+        <div class="container">
+            <div class="row">
+                <div class="main_featured m-top-100">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center">
+                            <h2>FEATURED WORK</h2>
+                            <div class="separator_auto"></div>
+                            <p>Our customized astrology reports provide deep insights into different aspects of life based on your birth chart (Janam Kundli). Whether you need guidance for career, marriage, finances, or health, our detailed reports offer clarity and practical solutions. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured_slider">
+            <div>
+                <div class="featured_img">
+                    <img src="assets/images/fprojects/1.jpg" alt="" />
+                    <a href="assets/images/fprojects/1.jpg"></a>
+                    <br>
+                    <h6>Detailed Birth Chart Report</h6>
+                </div>
+            </div>
+            <div>
+                <div class="featured_img">
+                    <img src="assets/images/fprojects/2.jpg" alt="" />
+                    <a href="assets/images/fprojects/2.jpg" class="popup-img"></a>
+                    <br>
+                    <h6>Matchmaking Report</h6>
+                </div>
+            </div>
+            <div>
+                <div class="featured_img">
+                    <img src="assets/images/fprojects/3.jpg" alt="" />
+                    <a href="assets/images/fprojects/3.jpg" class="popup-img"></a>
+                    <br>
+                    <h6>Career & Business Report</h6>
+                </div>
+            </div>
+            <div>
+                <div class="featured_img">
+                    <img src="assets/images/fprojects/4.jpg" alt="" />
+                    <a href="assets/images/fprojects/4.jpg" class="popup-img"></a>
+                    <br>
+                    <h6>Finance & Wealth Report</h6>
+                </div>
+            </div>
+            <div>
+                <div class="featured_img">
+                    <img src="assets/images/fprojects/5.jpg" alt="" />
+                    <a href="assets/images/fprojects/5.jpg" class="popup-img"></a>
+                    <br>
+                    <h6>Remedies & Solutions Report</h6>
+                </div>
+            </div>
+        </div><!-- End off featured slider -->
+
+
+
+        <!--Service Section-->
+        <section id="service" class="service">
+            <div class="container">
+                <div class="row">
+                    <div class="main_service roomy-100">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div class="head_title text-center">
+                                <h2>OUR SERVICES</h2>
+                                <div class="separator_auto"></div>
+                                <p>We offer a range of Vedic astrology services to help you gain clarity, overcome
+                                    challenges, and make informed life decisions. With expert analysis of your birth
+                                    chart (Janam Kundli) and planetary influences, we provide personalized guidance
+                                    tailored to your needs. </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <!-- <i class="icofont icofont-light-bulb"></i> -->
+                                <img class="small-icon img-fluid" src="./assets/images/icons/birth.png" alt="">
+                                <h6 class="m-top-30">Birth Chart Analysis</h6>
+                                <div class="separator_small"></div>
+                                <p>Get a detailed reading of your Janam Kundli, including:
+                                <ul>
+                                    <li>✔ Personality traits & strengths</li>
+                                    <li>✔ Career, business, and financial outlook</li>
+                                    <li>✔ Relationship & marriage compatibility</li>
+                                    <li>✔ Health predictions & remedies</li>
+                                    <li>✔ Lucky numbers, colors, and directions</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <img class="small-icon img-fluid" src="./assets/images/icons/heart.png" alt="">
+                                <h6 class="m-top-30">Matchmaking (Kundli Milan)</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Ensure a happy and successful marriage with detailed compatibility analysis:
+                                <ul>
+                                    <li> ✔ Gun Milan (36-point compatibility check)</li>
+                                    <li> ✔ Mangal Dosha & its remedies</li>
+                                    <li>✔ Relationship compatibility & future prospects</li>
+                                    <li>✔ Auspicious marriage dates & rituals </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <!-- <i class="icofont icofont-video"></i> -->
+                                <img class="small-icon img-fluid" src="./assets/images/icons/budget.png" alt="">
+                                <h6 class="m-top-30">Career & Business Astrology</h6>
+                                <div class="separator_small"></div>
+                                <p>Find the best career path and business opportunities based on your birth chart:
+                                <ul>
+                                    <li>✔ Ideal career choices & success periods</li>
+                                    <li> ✔ Job change, promotions & financial growth</li>
+                                    <li> ✔ Business partnerships & investment insights</li>
+                                    <li> ✔ Best industries for long-term success</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row -->
+
+
+                <!-- CUSTOM ROW -->
+                <div class="row">
+                    <div class="main_service">
+
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <!-- <i class="icofont icofont-light-bulb"></i> -->
+                                <img class="small-icon img-fluid" src="./assets/images/icons/budget.png" alt="">
+                                <h6 class="m-top-30">Finance & Wealth Analysis</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Plan for a stable financial future with astrological guidance:
+                                <ul>
+                                    <li>✔ Income growth & investment planning</li>
+                                    <li>✔ Property & asset predictions</li>
+                                    <li>✔ Risk periods & money management</li>
+                                    <li> ✔ Remedies for financial stability</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <!-- <i class="icofont icofont-imac"></i> -->
+                                <img class="small-icon img-fluid" src="./assets/images/icons/health.png" alt="">
+                                <h6 class="m-top-30">Health & Well-being Guidance</h6>
+                                <div class="separator_small"></div>
+                                <p>
+                                    Understand how planetary positions influence your health:
+                                <ul>
+                                    <li>✔ Possible health concerns & preventive measures</li>
+                                    <li>✔ Ayurveda & Vedic remedies for well-being</li>
+                                    <li>✔ Best time for surgeries & treatments</li>
+                                    <li>✔ Gemstones & mantras for health improvement</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service_item">
+                                <!-- <i class="icofont icofont-video"></i> -->
+                                <img class="small-icon img-fluid" src="./assets/images/icons/mortar.png" alt="">
+                                <h6 class="m-top-30">Remedies & Solutions</h6>
+                                <div class="separator_small"></div>
+                                <p>Overcome challenges with powerful Vedic remedies:
+                                <ul>
+                                    <li>✔ Gemstone recommendations</li>
+                                    <li> ✔ Mantras, Pujas & Yantras</li>
+                                    <li> ✔ Personalized amulets & Rudraksha guidance</li>
+                                    <li> ✔ Simple home-based remedies for positivity</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row -->
+
+
+                <!-- END OF CUSTOM ROW -->
+
+            </div><!--End off container -->
+        </section> <!--End off Featured section-->
+
+
+        <br><br><br>
+
+
+        <!--Portfolio Section-->
+
+
+
+        <!--Skill Sections-->
+        <section id="skill" class="skill roomy-100">
+            <div class="container">
+                <div class="row">
+                    <div class="main_skill"> 
+                        <div class="col-md-8">
+                            <div class="skill_content wow fadeIn">
+                                <h2>Our skill</h2>
+                                <div class="separator_left"></div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                    magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                    quis nostrud exerci tation ullamcorper suscipit lobortis
+                                    nisl ut aliquip ex ea commodo consequat. Lorem ipsum dolor
+                                    sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                                    Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                    ullamcorper suscipit lobortis nisl ut aliquip
+                                    ex ea commodo consequat. </p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+
+                        <img src="assets/images/Blog/1.jpg" alt="" />
+
+                        </div>
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+            <br />
+            <br />
+            <br />
+        </section> <!--End off Skill section -->
+
+
+
+        <!--Testimonial Section-->
+        <section id="testimonial" class="testimonial fix">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="main_testimonial roomy-100">
+                        <div class="head_title text-center">
+                            <h2 class="text-white">OUR TESTIMONIALS</h2>
+                        </div>
+                        <div class="testimonial_slid text-center">
+                            <div class="testimonial_item">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <p class="text-white"> <i>"I was struggling with career decisions, but after my birth chart analysis, I found the right path. The predictions were incredibly accurate!"</i> </p>
+
+                                    <div class="test_authour m-top-30">
+                                        <h6 class="text-white m-bottom-20">-Ravi Sharma, Mumbai</h6>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_item">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <p class="text-white">
+                                        <i>"The Kundli Milan report helped me find the perfect life partner. Highly recommended!" </i></p>
+                                    <div class="test_authour m-top-30">
+                                        <h6 class="text-white m-bottom-20">-Neha Verma, Delhi</h6>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_item">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <p class="text-white"> <i>"The yearly prediction report was spot-on! It helped me make better financial and business decisions" </i> </p>
+
+                                    <div class="test_authour m-top-30">
+                                        <h6 class="text-white m-bottom-20">-Priya Malhotra, Kolkata</h6>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial_item">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <p class="text-white">
+                                        <i>"After following the gemstone and mantra remedies, I noticed significant improvements in my health and financial situation.""
+                                            </i> </p>
+
+                                    <div class="test_authour m-top-30">
+                                        <h6 class="text-white m-bottom-20">-Amit Khanna, Bangalore</h6>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row-->
+            </div><!--End off container -->
+        </section> <!--End off Testimonial section -->
+
+
+
+        <!--Pricing Section-->
+
+
+
+        <!--client brand section-->
+
+
+        <!--Subscribe section-->
+
+
+        <!--Blog Section-->
+        <section id="blog" class="blog">
+            <div class="container">
+                <div class="row">
+                    <div class="main_blog text-center roomy-100">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="head_title text-center">
+                                <h2>RECENT BLOGS</h2>
+                                <div class="separator_auto"></div>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                    sed diam nonummy nibh euismod tincidunt tation ullamcorper
+                                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog_item m-top-20">
+                                <div class="blog_item_img">
+                                    <img src="assets/images/Blog/1.jpg" alt="" />
+                                </div>
+                                <div class="blog_text roomy-40">
+                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href="">
+                                                Co-working</a></em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog_item m-top-20">
+                                <div class="blog_item_img">
+                                    <img src="assets/images/Blog/2.jpg" alt="" />
+                                </div>
+                                <div class="blog_text roomy-40">
+                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href="">
+                                                Co-working</a></em></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="blog_item m-top-20">
+                                <div class="blog_item_img">
+                                    <img src="assets/images/Blog/3.jpg" alt="" />
+                                </div>
+                                <div class="blog_text roomy-40">
+                                    <h6>PLEASUARE WITHOUT CONSCIENCE</h6>
+                                    <p><em><a href="">May 15, 2016</a> /<a href="">admin</a>/<a href="">
+                                                Co-working</a></em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--End off row -->
+            </div><!--End off container -->
+        </section><!-- End off Blog section-->
+
+
+
+        <!--Maps Section-->
+
+
+
+        <!--Contact Us Section-->
+        <section id="contact" class="contact bg-mega fix">
+            <div class="container">
+                <div class="row">
+                    <div class="main_contact roomy-100 text-white">
+                        <div class="col-md-4">
+                            <div class="rage_widget">
+                                <div class="widget_head">
+                                    <h3 class="text-white">Astro</h3>
+                                    <div class="separator_small"></div>
+                                </div>
+                                <p>How to Get Your Astrology Report?
+
+                                    Our astrology reports are personalized and deeply analyzed, providing you with
+                                    accurate guidance and practical solutions. Simply share your birth details, and
+                                    we’ll generate a detailed report tailored to your life’s needs. </p>
+
+                                <p>
+                                    📞 Contact Us – Get Expert Astrological Guidance
+                                    Have questions about your birth chart, career, relationships, or future? Get in
+                                    touch with us for personalized astrology consultations.
+                                </p>
+
+                                <div class="widget_socail m-top-30">
+                                    <ul class="list-inline">
+                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href=""><i class="fa fa-vimeo"></i></a></li>
+                                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 sm-m-top-30">
+                            <form class="" action="https://script.google.com/macros/s/AKfycbzk273zB3CrbIHLhSekEsOWocu2Cyfwo0R6ZGO4nFqYysEebS6G4q_xYnKVN79WCqA/exec" method="POST">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input id="name" name="name" type="text" placeholder="Name"
+                                                class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input id="phone" name="phone" type="tel" placeholder="Phone"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input id="email" name="email" type="email" placeholder="Email"                                 class="form-control" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input id="birthdate" name="birthdate" type="date" placeholder="Birth Date"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <button class="btn btn-primary" type="submit">SEND MESSAGE</button>
+                                            <!-- <a href="" class="btn btn-primary">SEND MESSAGE</a> -->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div><!--End off row -->
+            </div><!--End off container -->
+        </section><!--End off Contact Section-->
+
+
+        <!-- scroll up-->
+        <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div><!-- End off scroll up -->
+
+
+        <footer id="footer" class="footer bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="main_footer text-center p-top-40 p-bottom-30">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Made with
+                            <i class="fa fa-heart"></i>
+                            by
+                            <a target="_blank" href="https://bootstrapthemes.co">Bootstrap Themes</a>
+                            2016. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+    </div>
+
+    <!-- JS includes -->
+
+    <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.collapse.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+
+
+    <!-- paradise slider js -->
+
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyD_tAQD36pKp9v4at5AnpGbvBUsLCOSJx8"></script>
+    <script src="assets/js/gmaps.min.js"></script>
+
+    <script>
+        function showmap() {
+            var mapOptions = {
+                zoom: 8,
+                scrollwheel: false,
+                center: new google.maps.LatLng(-34.397, 150.644),
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            $('.mapheight').css('height', '350');
+            $('.maps_text h3').hide();
+        }
+
+    </script>
+
+
+
+
+
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
