@@ -2,6 +2,37 @@
 
 const today = new Date().toISOString().split('T')[0];
 document.getElementById("birthdate").setAttribute("max",today);
+const toggleBtn1 = document.getElementById('toggleBtn1');
+const toggleBtn2 = document.getElementById('toggleBtn2');
+const toggleBtn3 = document.getElementById('toggleBtn3');
+
+const collapseElement1 = document.getElementById('blogcontent1');
+collapseElement1.addEventListener('show.bs.collapse', () => {
+    toggleBtn1.textContent = 'Read Less';
+  });
+
+  collapseElement1.addEventListener('hide.bs.collapse', () => {
+    toggleBtn1.textContent = 'Read More';
+  });
+
+
+const collapseElement2 = document.getElementById('blogcontent2');
+collapseElement2.addEventListener('show.bs.collapse', () => {
+    toggleBtn2.textContent = 'Read Less';
+  });
+
+  collapseElement2.addEventListener('hide.bs.collapse', () => {
+    toggleBtn2.textContent = 'Read More';
+  });
+
+const collapseElement3 = document.getElementById('blogcontent3');
+collapseElement3.addEventListener('show.bs.collapse', () => {
+    toggleBtn3.textContent = 'Read Less';
+  });
+
+  collapseElement3.addEventListener('hide.bs.collapse', () => {
+    toggleBtn3.textContent = 'Read More';
+  });
 
 jQuery(document).ready(function ($) {
 
