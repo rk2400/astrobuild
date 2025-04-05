@@ -3,6 +3,19 @@
 const today = new Date().toISOString().split('T')[0];
 document.getElementById("birthdate").setAttribute("max",today);
 
+window.addEventListener('load', function () {
+    // Reset the form fields
+    const form = document.querySelector("contactForm");
+    if (form) form.reset();
+
+    // Reset the submit button text if needed
+    const submitBtn = document.querySelector("button[type='submit']");
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = "Send Message"; // change if you use something else like a loader
+    }
+  });
+
 jQuery(document).ready(function ($) {
 
 //for Preloader
@@ -171,10 +184,6 @@ jQuery(document).ready(function ($) {
             this.removeClass("open");
         }
     });
-
-
-
-
 
 //Team Skillbar active js
 

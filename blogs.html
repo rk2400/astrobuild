@@ -456,7 +456,9 @@
                             <script>
                                 document.getElementById("contactForm").addEventListener("submit", function (e) {
                                     e.preventDefault();
-
+                                    const submitBtn = document.querySelector("button[type='submit']");
+                                    submitBtn.disabled = true;
+                                    submitBtn.innerText = "Submitting...";
                                     const form = e.target;
                                     const formData = new FormData(form);
 
@@ -469,7 +471,9 @@
                                         .then(data => {
                                             if (data.status === "success") {
                                                 const token = data.token;
-                                                // Redirect to a clean thank-you page                           
+                                                document.getElementById("contactForm").reset();           
+                                                submitBtn.disabled = false;    
+                                                submitBtn.innerText = "Send Message";         
                                                 window.location.href = `processing.html?token=${token}`;
                                             } else {
                                                 alert("Something went wrong. Please try again.");
@@ -478,7 +482,7 @@
                                         .catch(error => {
                                             console.error("Submission error:", error);
                                             alert("There was a problem submitting your form. Please try again.");
-                                        });
+                                        });                                
                                 });
                             </script>
 
