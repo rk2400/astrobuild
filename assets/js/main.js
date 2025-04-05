@@ -1,7 +1,7 @@
 "use strict";
 
-//Rage Template
-//Designerd by: http://bootstrapthemes.co
+const today = new Date().toISOString().split('T')[0];
+document.getElementById("birthdate").setAttribute("max",today);
 
 jQuery(document).ready(function ($) {
 
@@ -178,17 +178,11 @@ jQuery(document).ready(function ($) {
 
 //Team Skillbar active js
 
-    jQuery('.teamskillbar').each(function () {
-        jQuery(this).find('.teamskillbar-bar').animate({
-            width: jQuery(this).attr('data-percent')
-        }, 6000);
-    });
-
-
-
-
-
-  
+    // jQuery('.teamskillbar').each(function () {
+    //     jQuery(this).find('.teamskillbar-bar').animate({
+    //         width: jQuery(this).attr('data-percent')
+    //     }, 6000);
+    // });
 
     //End
 

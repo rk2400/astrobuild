@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processing Your Request...</title>
-    <meta http-equiv="refresh" content="2;url=https://rk2400.github.io/astrobuild/thankyou">
-    <style>
-        body {
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 50px;
-        }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            margin-bottom: 10px;
-        }
-        p {
-            color: #666;
-        }
-        .loader {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #007BFF;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Processing...</title>
+  <meta name="description" content="">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0c0c0c;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+    .loader {
+      border: 5px solid #fff;
+      border-top: 5px solid #ff9800;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h2>Processing Your Request...</h2>
-        <p>Please wait while we redirect you.</p>
-        <div class="loader"></div>
-    </div>
+  <div class="loader"></div>
+  <h2>Processing your submission...</h2>
+  <p>Please wait a moment.</p>
+
+  <script>
+    const token = new URLSearchParams(window.location.search).get("token");
+
+    if (!token) {
+      window.location.href = "error.html";
+    }
+
+    // Send token to server for validation
+    fetch('https://script.google.com/macros/s/AKfycbzk273zB3CrbIHLhSekEsOWocu2Cyfwo0R6ZGO4nFqYysEebS6G4q_xYnKVN79WCqA/exec?token=' + encodeURIComponent(token) + "&action=validate")
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          setTimeout(() => {
+            window.location.href = `thankyou.html?token=${token}`;
+          }, 7000);
+        } else {
+          window.location.href = "error.html";
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        window.location.href = "error.html";
+      });
+  </script>
 </body>
 </html>

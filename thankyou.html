@@ -1,52 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You!</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 50px;
-        }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            padding: 30px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #28a745;
-        }
-        p {
-            color: #666;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      max-width: 600px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #ffcc70;
+    }
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 25px;
+      background-color: #ffcc70;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    a:hover {
+      background-color: #ffb84d;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h2>🎉 Thank You!</h2>
-        <p>Your submission has been received successfully.</p>
-        <p>You will receive a mail from us soon with your Enquiry ID.</p>
-        <a href="https://rk2400.github.io/astrobuild/" class="button">Back to Home</a>
-    </div>
+  <div class="container" id="thankyou-box" style="display:none;">
+    <h1>Thank You!</h1>
+    <p>Your enquiry has been successfully submitted.<br>We appreciate your interest and will get back to you shortly.</p>
+    <a href="index.html">Return to Home</a>
+  </div>
+
+  <script>
+    const token = new URLSearchParams(window.location.search).get("token");
+
+    if (!token) {
+      window.location.href = "error.html";
+    }
+
+    // Validate and delete token
+    fetch("https://script.google.com/macros/s/AKfycbzk273zB3CrbIHLhSekEsOWocu2Cyfwo0R6ZGO4nFqYysEebS6G4q_xYnKVN79WCqA/exec?token=" + encodeURIComponent(token) + "&action=finalize")
+      .then(res => res.json())
+      .then(data => {
+        if (data.success) {
+          document.getElementById("thankyou-box").style.display = "block";
+        } else {
+          window.location.href = "error.html";
+        }
+      })
+      .catch(() => {
+        window.location.href = "error.html";
+      });
+  </script>
 </body>
 </html>
