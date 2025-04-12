@@ -1342,7 +1342,13 @@ Video Section style
     border-radius: 50%;
     position: relative;
 } */
-
+.navbar-logo{
+    height: 40px;
+    width: auto;
+    /* margin-right: 2px; */
+    vertical-align: middle;
+    object-fit: contain;
+}
 .remedy-section {
     padding: 60px 20px;
 }
