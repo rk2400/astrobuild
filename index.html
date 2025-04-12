@@ -141,9 +141,9 @@
                                     We blend ancient Indian wisdom with a soft, modern approach that anyone can
                                     understand — no complicated words or pressure. Just love, light, and true guidance.
                                 </p>
-                                <p>We blend ancient Indian Vedic/Western techniques with modern psychology to provide
+                                <!-- <p>We blend ancient Indian Vedic/Western techniques with modern psychology to provide
                                     practical, ethical guidance. Our mission is to help you align with your true path –
-                                    Without fear and fake pridictions</p>
+                                    Without fear and fake pridictions</p> -->
                                 <p>
                                 <ul>
                                     <li>💌 Have a question? Want to understand your birth chart?
@@ -216,12 +216,12 @@
                     </div>
                 </div><!--End off row-->
             </div><!--End off container -->
+            <!-- <br /> -->
+            <!-- <br />
             <br />
-            <br />
-            <br />
-            <br />
+            <br /> -->
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="about_bottom_content">
                         <div class="col-md-4">
@@ -278,9 +278,9 @@
                             </div>
                         </div>
                     </div>
-                </div><!--End off row-->
-            </div><!--End off container -->
-        </section> <!--End off About section -->
+                </div>
+            </div> -->
+        </section>
 
 
         <!--Video section-->
@@ -892,7 +892,16 @@
     </div>
 
     <!-- JS includes -->
+    <script>
+        document.getElementById("custom-play-btn").addEventListener("click", function () {
+            const video = document.getElementById("custom-video-player");
+            const thumbnail = document.getElementById("custom-video-thumbnail");
 
+            thumbnail.style.display = "none";
+            video.style.display = "block";
+            video.play();
+        });
+    </script>
     <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.min.js"></script>
 
