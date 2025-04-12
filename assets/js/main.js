@@ -16,13 +16,14 @@ window.addEventListener('load', function () {
     }
 });
 
-function playVideo() {
-    const video = document.getElementById('astroVideo');
-    const playBtn = document.querySelector('.custom-play-button');
+document.getElementById("custom-play-btn").addEventListener("click", function () {
+    const video = document.getElementById("custom-video-player");
+    const thumbnail = document.getElementById("custom-video-thumbnail");
 
-    playBtn.style.display = 'none';
+    thumbnail.style.display = "none";
+    video.style.display = "block";
     video.play();
-}
+  });
 
 jQuery(document).ready(function ($) {
 

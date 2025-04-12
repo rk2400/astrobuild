@@ -660,42 +660,36 @@
 
 
         <!-- Video Section -->
-        <section id="video" class="roomy-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-md-offset-1 text-center">
-                        <div class="head_title">
-                            <h2>WATCH OUR STORY</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="main_featured m-top-30 ">
+                    <div class="col-sm-12">
+                        <div class="head_title text-center">
+                            <h2>FEATURED WORK</h2>
                             <div class="separator_auto"></div>
-                            <p>Simple truths. Soulful connection. Watch how our journey began and what keeps us
-                                inspired.</p>
                         </div>
-
-                        <div class="video-wrapper" style="max-width: 100%; height: auto;">
-                            <div id="video-thumbnail" class="video-thumbnail">
-                                <img src="https://images.unsplash.com/photo-1589487674857-1488ace05caf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGdhbmVzaHxlbnwwfHwwfHx8MA%3D%3D" class="img-responsive img-rounded"
-                                    alt="Video Thumbnail" />
-                                <button id="play-video" class="btn btn-primary video-play-btn"
-                                    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; padding: 20px 25px;">
-                                    <i class="fa fa-play"></i>
-                                </button>
-                            </div>
-
-                            <div id="video-container" class="embed-responsive embed-responsive-16by9"
-                                style="display: none;">
-                                <video class="embed-responsive-item" controls controlsList="nodownload"
-                                    disablePictureInPicture>
-                                    <source src="./assets/videos/video.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
+        <div class="custom-video-container">
+            <div class="custom-video-thumbnail" id="custom-video-thumbnail">
+                <img src="https://images.unsplash.com/photo-1567591391293-f9a99c77e128?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGdhbmVzaHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="Video Thumbnail" />
+                <button class="custom-video-play-btn" id="custom-play-btn">
+                    <i class="fa fa-play"></i>
+                </button>
+            </div>
+
+            <video id="custom-video-player" class="custom-video-player" controls preload="none" style="display: none;">
+                <source src="assets/videos/video.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <br><br><br><br>
 
         <!--Contact Us Section-->
         <section id="contact" class="contact bg-mega fix">
@@ -829,6 +823,57 @@
             <a href="#"><i class="fa fa-chevron-up"></i></a>
         </div><!-- End off scroll up -->
 
+
+        <section class="privacy-section">
+            <div class="container">
+                <h2 class="privacy-title">Privacy Policy for Phraganeshastro.com</h2>
+                <p class="privacy-updated">Last updated: April 2025</p>
+
+                <div class="privacy-grid">
+                    <div class="privacy-column">
+                        <h4>What Information We Collect</h4>
+                        <ul>
+                            <li>Name, email address, and birth details you share with us</li>
+                            <li>Messages you send through our contact form</li>
+                            <li>Any information shared during consultations</li>
+                        </ul>
+
+                        <h4>We DO NOT:</h4>
+                        <ul>
+                            <li>Sell your data to any third parties</li>
+                            <li>Send unnecessary emails or messages</li>
+                        </ul>
+
+                        <h4>Cookies</h4>
+                        <p>
+                            Our website may use cookies to improve user experience.
+                            You can choose to disable them in your browser settings.
+                        </p>
+                    </div>
+
+                    <div class="privacy-column">
+                        <h4>How We Use It</h4>
+                        <ul>
+                            <li>To provide astrology readings and services</li>
+                            <li>To communicate with you when needed</li>
+                            <li>To improve our website and offerings</li>
+                        </ul>
+
+                        <h4>Data Security</h4>
+                        <p>
+                            We use secure systems to store and handle your data.
+                            Your personal information is protected and confidential.
+                        </p>
+
+                        <h4>Contact Us</h4>
+                        <p>
+                            For any privacy-related questions, please email us at:
+                            <strong>support@phraganeshastro.com</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer id="footer" class="footer bg-black">
             <div class="container">
