@@ -1192,7 +1192,122 @@ Video Section style
     position: relative;
 } */
 
+.remedy-section {
+    padding: 60px 20px;
+  }
+  .remedy-zigzag {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .remedy-zigzag.reverse {
+    flex-direction: row-reverse;
+  }
+  .remedy-image {
+    flex: 1 1 200px;
+    padding: 10px;
+    text-align: center;
+  }
+  .remedy-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .remedy-content {
+    flex: 1 1 400px;
+    padding: 10px 20px;
+  }
+  .remedy-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  .remedy-content ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  .remedy-content li {
+    margin-bottom: 5px;
+  }
+  @media (max-width: 768px) {
+    .remedy-zigzag,
+    .remedy-zigzag.reverse {
+      flex-direction: column;
+    }
+    .remedy-content {
+      padding: 20px 0;
+    }
+  }
 
+.video-section {
+    background-color: #fdf6f5;
+    color: #333;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff6863;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .video-wrapper {
+    max-width: 800px;
+    position: relative;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .video-thumbnail{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .video-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .custom-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 104, 99, 0.8);
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+  
+  .custom-play-button:hover {
+    background: rgba(255, 104, 99, 1);
+  }
+  
+  #astroVideo::-internal-media-controls-download-button {
+    display: none;
+  }
+  
 /*
 Featured section style
 ========================*/
