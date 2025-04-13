@@ -1249,6 +1249,27 @@ About section style
 FAQ Page
 --------*/
 
+.faq-toggle .faq-question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* padding: 5px; */
+    flex-wrap: nowrap;
+  }
+  
+  .faq-question i {
+    font-size: 1.5rem;
+    min-width: 24px;
+    text-align: center;
+  }
+  
+  .faq-question span {
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1;
+    word-break: break-word;
+  }
+
 .faq_main_content h6 {
     margin-bottom: 0rem;
     border: 1px solid;
@@ -1307,7 +1328,6 @@ FAQ Page
     background-color: #444444;
 }
 
-
 .faq_main_content h6.open a i {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
@@ -1330,6 +1350,7 @@ FAQ Page
         margin-bottom: 20px;
     }
 }
+
 /*
 Video Section style
 ======================*/
