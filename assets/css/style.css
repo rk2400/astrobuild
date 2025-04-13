@@ -1318,7 +1318,18 @@ FAQ Page
     color: #4a4a4a;
 }
 
+.hero-logo {
+    max-height: 120px;   /* Adjust based on your design */
+    width: auto;
+    object-fit: contain;
+}
 
+@media (max-width: 768px) {
+    .hero-logo {
+        max-height: 80px;
+        margin-bottom: 20px;
+    }
+}
 /*
 Video Section style
 ======================*/
