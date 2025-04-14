@@ -1243,7 +1243,9 @@ About section style
 
 }
 
-
+a, a:hover{
+    color: #797979;
+}
 
 /*
 FAQ Page
